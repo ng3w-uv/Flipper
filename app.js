@@ -68,7 +68,7 @@ const StatusData = mongoose.model("status", StatusSchema);
 
 server.use(express.json());
 server.use(express.urlencoded({extended:true}));
-console.log("above register api");
+console.log("above post api");
 
 server.post('/api1',async(req,res) =>{
     let devices = [];
