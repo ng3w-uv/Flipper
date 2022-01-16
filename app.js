@@ -17,7 +17,6 @@ var cors = require('cors');
 // var bodyParser = require('body-parser');
 const server = express();
 // server.use(cookieParser());
-
 server.use(cors(
     {
         origin:'http://localhost:3000',
@@ -100,7 +99,7 @@ server.post('/api1',async(req,res) =>{
 });
 
 //this is at the last
-server.listen(3000, () => 
+server.listen(process.env.PORT, () => 
 console.log("Server Online now"),
 );
 
